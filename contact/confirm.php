@@ -71,8 +71,8 @@ EOM;
     mb_send_mail($email, $subject, $body, $header);
 
     // サンクスページに画面遷移させる
-    header("Location: thanks.php");
-    exit;
+    // header("Location: thanks.php");
+    // exit;
 }
 ?>
 <html lang="ja">
@@ -91,7 +91,7 @@ EOM;
         <h2>お問い合わせ</h2>
     </div>
     <div>
-        <form action="txt_create.php" method="POST">
+        <form action="txt_make.php" method="POST">
             <input type="hidden" name="name" value="<?php echo $name; ?>">
             <input type="hidden" name="furigana" value="<?php echo $furigana; ?>">
             <input type="hidden" name="email" value="<?php echo $email; ?>">
